@@ -3,6 +3,7 @@ import socket
 LISTEN_HOST = '127.0.0.1'
 LISTEN_PORT = 27777
 
+
 # Create a TCP stream client socket for client-proxy communication
 def start_proxy():
     proxy_socket = None
