@@ -146,7 +146,6 @@ def extract_modify_content_type(response_data:bytes):
             if content_type in process_type:
                 return True
             else:
-                print("No content type can be modified")
                 return False
 
 # update header length and reorganize header
@@ -197,7 +196,7 @@ def modify_response(response_data:bytes):
                 print("No content need to modify")
                 return response_data
         else:
-            print("No content type can modify")
+            print("No content type can be modified")
             return response_data
         
     if code == 304:
